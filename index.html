@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Jhade | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Yash.</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Yash Jhade</span></h1>
+            <div class="text-animate">
+              <h3 id="element"></h3>
+            </div>
+            <p>Passionate about building web applications and solving problems with Java and modern web technologies.</p>
+            
+            <div class="btn-box">
+                <a href="resume.pdf" class="btn">Download CV</a>
+                <a href="#contact" class="btn">Let's Talk</a>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://github.com/yashjhade-19" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/yash-jhade" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="mailto:yashjhade19@gmail.com?subject=Contact%20from%20Portfolio"><i class='bx bxl-gmail'></i></a>
+        </div>
+
+       <!--  <div class="home-imgHover"></div> -->
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="about-img">
+            <img src="about.jpg" alt="Yash Jhade">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Java & Web Developer!</h3>
+            <p>I'm a passionate developer currently pursuing Computer Science. I specialize in building web applications using Java technologies (Servlets, JSP) and modern frontend frameworks. My goal is to create efficient, scalable solutions that solve real-world problems.</p>
+            
+            <p>I have experience in building web applications using Java Servlets, JSP, and frontend technologies. I love solving problems and continuously improving my coding skills.</p>
+
+            <div class="btn-box btns">
+                <a href="#projects" class="btn">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2 class="heading">My <span>Projects</span></h2>
+
+    <div class="projects-container">
+        <div class="project-box" style="background-image: url('project1.png') ; background-size:cover; background-position:center;">
+            <div class="project-layer">
+                <h4>Java Web App</h4>
+                <p>A CRUD application using Servlets, JSP, and MySQL</p>
+                <a href="https://github.com/yashjhade-19/JSP-Project" target="_blank">
+                    <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-box" style="background-image: url('project2.png'); background-size:cover; background-position:center;">
+            <div class="project-layer">
+                <h4>Snake Game</h4>
+                <p>GUI-based application using Java Swing and AWT</p>
+                <a href="https://github.com/yashjhade-19/Snake-Game" target="_blank">
+                    <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+   <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <div class="contact-info" style="position:absolute; left: 10px; top:2400px; font-size:17px;">
+        <div class="info-box">
+            <i class='bx bx-envelope'></i>
+            <span>Email</span>
+            <a href="mailto:yashjhade19@gmail.com">yashjhade19@gmail.com</a>
+        </div>
+        
+        <div class="info-box">
+            <i class='bx bx-phone'></i>
+            <span>Mobile</span>
+            <a href="tel:+918640096716">+91 8640096716</a>
+        </div>
+    </div>
+            <!-- <div class="info-box">
+                <i class='bx bxl-linkedin'></i>
+                <span>LinkedIn</span>
+                <a href="https://linkedin.com/in/yash-jhade" target="_blank">linkedin.com/in/yash-jhade</a>
+            </div>
+            
+            <div class="info-box">
+                <i class='bx bxl-github'></i>
+                <span>GitHub</span>
+                <a href="https://github.com/yashjhade-19" target="_blank">github.com/yashjhade-19</a>
+            </div> -->
+      
+
+        <form action="#" method="POST">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile Number">
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; <span id="year"></span> by Yash Jhade | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!-- Setup and start animation! -->
+<script>
+  var typed = new Typed('#element', {
+    strings: ['Web Developer', 'Java Developer', 'Problem Solver'],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true,
+    showCursor: false,
+    cursorChar: "|",
+    smartBackspace: true
+  });
+</script>
+
+	</body>
+	</html>
