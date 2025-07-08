@@ -162,19 +162,22 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-	
-        <div class="footer-text">
-            <p>Copyright &copy; <span id="year"></span> by Yash Jhade | All Rights Reserved.</p>
-			 <span id="visitor-count">Loading visitors...</span>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-text">
+    <p>
+      Copyright &copy; <span id="year"></span> by Yash Jhade |
+      <span id="visitor-count">Loading visitors...</span>
+    </p>
+  </div>
 
-        </div>
+  <div class="footer-iconTop">
+    <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+  </div>
+</footer>
 
-        <div class="footer-iconTop">
-            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-		
-    </footer>
+
+
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
@@ -190,7 +193,13 @@
     smartBackspace: true
   });
   
-    fetch('https://api.countapi.xyz/hit/yashjhade.netlify.app/visits')
+  <!-- Footer Scripts -->
+
+  // Set dynamic current year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // CountAPI visitor tracker
+  fetch('https://api.countapi.xyz/hit/yashjhade/portfolio-visits')
     .then(res => res.json())
     .then(res => {
       document.getElementById('visitor-count').innerText = `Visitors: ${res.value}`;
