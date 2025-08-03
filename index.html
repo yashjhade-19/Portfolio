@@ -43,6 +43,7 @@
        <!--  <div class="home-imgHover"></div> -->
     </section>
 
+
     <!-- About Section -->
     <section class="about" id="about">
         <h2 class="heading">About <span>Me</span></h2>
@@ -199,6 +200,7 @@
   document.getElementById("year").textContent = new Date().getFullYear();
 
   // CountAPI visitor tracker
+  
   fetch('https://api.countapi.xyz/hit/yashjhade/portfolio-visits')
     .then(res => res.json())
     .then(res => {
