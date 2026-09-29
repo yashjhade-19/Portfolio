@@ -77,3 +77,25 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Experience selector
+const experienceTabs = document.querySelectorAll('.experience-tab');
+const experiencePanels = document.querySelectorAll('.experience-panel');
+
+experienceTabs.forEach(tab => {
+    tab.addEventListener('click', function () {
+        const selectedExperience = this.dataset.experience;
+
+        experienceTabs.forEach(item => {
+            const isActive = item === this;
+            item.classList.toggle('active', isActive);
+            item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+
+        experiencePanels.forEach(panel => {
+            const isActive = panel.dataset.panel === selectedExperience;
+            panel.classList.toggle('active', isActive);
+            panel.hidden = !isActive;
+        });
+    });
+});

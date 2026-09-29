@@ -24,6 +24,7 @@
         <nav class="navbar" id="navbar">
             <a href="#home" class="nav-link active">Home</a>
             <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
             <a href="#projects" class="nav-link">Projects</a>
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
@@ -86,6 +87,155 @@
                     <span class="circle-spin"></span>
                 </div>
 
+            </div>
+        </section>
+
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience">
+            <div class="experience-header">
+                <h2 class="section-title">My <span class="highlight">Experience</span></h2>
+                <p class="section-subtitle">Professional internships and hands-on engineering experience.</p>
+            </div>
+
+            <div class="experience-shell">
+                <!-- Experience selector -->
+                <div class="experience-selector" role="tablist" aria-label="Professional experience">
+                    <button class="experience-tab active" type="button" role="tab" aria-selected="true"
+                        aria-controls="experience-details" data-experience="infosys">
+                        <span class="experience-tab-dot"></span>
+                        <span class="experience-tab-copy">
+                            <strong>Infosys Springboard</strong>
+                            <small>Java Development Intern</small>
+                        </span>
+                        <i class="bx bx-chevron-right"></i>
+                    </button>
+
+                    <button class="experience-tab" type="button" role="tab" aria-selected="false"
+                        aria-controls="experience-details" data-experience="seventh-ray">
+                        <span class="experience-tab-dot"></span>
+                        <span class="experience-tab-copy">
+                            <strong>Seventh Ray</strong>
+                            <small>Full Stack Developer Intern</small>
+                        </span>
+                        <i class="bx bx-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Experience details -->
+                <div class="experience-details" id="experience-details">
+                    <!-- Infosys -->
+                    <article class="experience-panel active" data-panel="infosys" role="tabpanel">
+                        <div class="experience-panel-top">
+                            <div>
+                                <span class="experience-eyebrow">JAVA DEVELOPMENT INTERN · 2026</span>
+                                <h3>Infosys Springboard</h3>
+                                <p class="experience-project">SentinelCore Enterprise Security Operations Platform</p>
+                            </div>
+                            <span class="experience-status"><i class="bx bx-code-alt"></i> Full Stack</span>
+                        </div>
+
+                        <p class="experience-summary">
+                            Contributed to a security-focused monitoring and incident-management platform built with
+                            Spring Boot, React, PostgreSQL, and AWS.
+                        </p>
+
+                        <div class="experience-grid">
+                            <div class="experience-block">
+                                <span class="experience-block-label">Backend &amp; Security</span>
+                                <ul>
+                                    <li>Developed RESTful backend services using Spring Boot, JPA, and PostgreSQL.</li>
+                                    <li>Implemented JWT-based authentication, authorization, and role-based access control.</li>
+                                    <li>Built scheduled asset-health monitoring with threshold-based alert processing.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-block">
+                                <span class="experience-block-label">Full-Stack Integration</span>
+                                <ul>
+                                    <li>Integrated React and Vite frontend modules with backend REST APIs using Axios.</li>
+                                    <li>Worked across asset, alert, incident, vulnerability, audit-log, and compliance modules.</li>
+                                    <li>Implemented dashboard data integration and search/filter functionality.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-block experience-block-wide">
+                                <span class="experience-block-label">Deployment</span>
+                                <ul>
+                                    <li>Dockerized and deployed the Spring Boot backend on AWS EC2 with PostgreSQL and environment-based configuration.</li>
+                                    <li>Connected and verified the React frontend against the deployed backend APIs.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="experience-tech">
+                            <span class="tag">Java 21</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">React</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Spring Security</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">AWS EC2</span>
+                        </div>
+                    </article>
+
+                    <!-- Seventh Ray -->
+                    <article class="experience-panel" data-panel="seventh-ray" role="tabpanel" hidden>
+                        <div class="experience-panel-top">
+                            <div>
+                                <span class="experience-eyebrow">FULL STACK DEVELOPER INTERN</span>
+                                <h3>Seventh Ray Consulting &amp; Technology Pvt. Ltd.</h3>
+                                <p class="experience-project">Enterprise Contract Management System</p>
+                            </div>
+                            <span class="experience-status"><i class="bx bx-calendar"></i> 17 Jun 2026 — 17 Sep 2026</span>
+                        </div>
+
+                        <div class="confidential-note">
+                            <i class="bx bx-lock-alt"></i>
+                            <span>Project details are confidential under NDA.</span>
+                        </div>
+
+                        <p class="experience-summary">
+                            Contributed to the development of an enterprise Contract Management System designed to
+                            streamline contract lifecycle management through a modern full-stack architecture.
+                        </p>
+
+                        <div class="experience-grid">
+                            <div class="experience-block">
+                                <span class="experience-block-label">Frontend</span>
+                                <ul>
+                                    <li>Developed reusable React.js components and scalable frontend modules using Material UI.</li>
+                                    <li>Contributed to frontend feature development and REST API integration.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-block">
+                                <span class="experience-block-label">Backend &amp; Data</span>
+                                <ul>
+                                    <li>Developed and integrated RESTful APIs using Spring Boot to support application workflows.</li>
+                                    <li>Designed and maintained PostgreSQL schemas, entities, and relationships.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-block experience-block-wide">
+                                <span class="experience-block-label">Collaboration</span>
+                                <ul>
+                                    <li>Collaborated with the development team on feature design, API integration, and application architecture.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="experience-tech">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Material UI</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
